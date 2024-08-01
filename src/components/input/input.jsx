@@ -9,7 +9,7 @@ const Input = () => {
   return (
     <div>
       <input type="text" onChange={(e) => setValue(e.target.value)}></input>
-      <button> поиск</button>
+      <button onClick={filtered}> поиск</button>
     </div>
   );
 };
