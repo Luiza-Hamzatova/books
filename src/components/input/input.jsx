@@ -2,7 +2,7 @@ import setBooks from "../arrayBooks/arrayBooks";
 
 const Input = () => {
   const [value, setValue] = useState("");
-  const filtered = setBooks.filter((book) => {
+  const filtered = setBooks.filter((setBooks) => {
     return setBooks.name.toLowerCase().includes(value.toLowerCase());
   });
 
