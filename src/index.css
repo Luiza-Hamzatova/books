@@ -30,10 +30,12 @@ h1 {
 }
 button {
   width: 60px;
+  height: 32px;
   cursor: pointer;
   border: 0;
   box-shadow: 0 0 0 2px #ccc;
   background-color: #fff;
+  margin: 10px;
 }
 .btn_disibled {
   opacity: 0.4;
@@ -42,7 +44,7 @@ button {
 input {
   height: 30px;
   cursor: pointer;
-  width: 300px;
+  width: 200px;
   border: 1px solid #ccc;
 }
 input:focus {
@@ -84,10 +86,6 @@ code {
 }
 .title {
   color: red;
-}
-.wrapper {
-  width: 1100px;
-  margin: 0 auto;
 }
 
 .shopImg {

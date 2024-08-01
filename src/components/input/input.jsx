@@ -1,9 +1,15 @@
+import setBooks from "../arrayBooks/arrayBooks";
+
 const Input = () => {
-  const search = (event) => {};
+  const [value, setValue] = useState("");
+  const filtered = setBooks.filter((book) => {
+    return setBooks.name.toLowerCase().includes(value.toLowerCase());
+  });
+
   return (
-    <div className="wrapper">
-      <input placeholder="Поиск"></input>
-      <button onClick={search}>Поиск</button>
+    <div>
+      <input type="text" onChange={(e) => setValue(e.target.value)}></input>
+      <button> поиск</button>
     </div>
   );
 };
